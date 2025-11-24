@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { ExperienceTimeline } from "@/components/cards/ExperienceTimeline";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { experience, education, certifications } from "@/lib/data";
+import { experience, education } from "@/lib/data";
 import { AnimatedSection } from "@/components/sections/AnimatedSection";
-import { GraduationCap, Award } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 
 export default function ExperiencePage() {
   return (
@@ -99,48 +99,6 @@ export default function ExperiencePage() {
                         </li>
                       ))}
                     </ul>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </AnimatedSection>
-
-      {/* Certifications */}
-      <AnimatedSection>
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-4xl font-bold mb-4">Certifications</h2>
-            <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
-          </motion.div>
-
-          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-            {certifications.map((cert, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <Card className="h-full hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="flex items-start gap-4">
-                      <div className="p-3 rounded-full bg-primary/10 border border-primary/20">
-                        <Award className="h-6 w-6 text-primary" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="font-semibold text-lg mb-1">{cert.name}</h3>
-                        <p className="text-sm text-muted-foreground mb-2">{cert.issuer}</p>
-                        <Badge variant="outline">{cert.date}</Badge>
-                      </div>
-                    </div>
                   </CardContent>
                 </Card>
               </motion.div>
