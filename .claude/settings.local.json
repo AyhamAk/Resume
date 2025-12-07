@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install @google/generative-ai)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

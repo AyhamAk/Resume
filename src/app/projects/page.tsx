@@ -21,10 +21,12 @@ export default function ProjectsPage() {
       ? projects
       : projects.filter((p) => p.category === selectedCategory);
 
-  // Debug: Log if projects are empty
-  if (projects.length === 0) {
-    console.warn("No projects loaded!");
-  }
+  // Debug: Log project data
+  useEffect(() => {
+    console.log('Total projects:', projects.length);
+    console.log('Filtered projects:', filteredProjects.length);
+    console.log('Selected category:', selectedCategory);
+  }, [filteredProjects.length, selectedCategory]);
 
   return (
     <div className="min-h-screen">
@@ -71,13 +73,18 @@ export default function ProjectsPage() {
 
           {/* Projects Grid */}
           <motion.div
+            key={selectedCategory}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto"
           >
             {filteredProjects.map((project, index) => (
-              <ProjectCard key={project.id} {...project} index={index} />
+              <ProjectCard
+                key={`${selectedCategory}-${project.id}`}
+                {...project}
+                index={index}
+              />
             ))}
           </motion.div>
 

@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
+import { AIGuide } from "@/components/guide/AIGuide";
 import { personalInfo } from "@/lib/data";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -58,6 +59,7 @@ export default function RootLayout({
             <main className="flex-1 pt-16">{children}</main>
             <Footer />
           </div>
+          <AIGuide />
         </ThemeProvider>
       </body>
     </html>
