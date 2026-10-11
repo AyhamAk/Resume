@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse"><stop stop-color="#7c2d12"/><stop offset="1" stop-color="#e11d48"/></linearGradient></defs>
+<rect width="800" height="450" fill="url(#bg)"/>
+<circle cx="700" cy="400" r="190" fill="#fff" fill-opacity=".07"/>
+<g stroke="#fff" stroke-opacity=".7" stroke-width="3" stroke-dasharray="6 8"><path d="M170 225 H250"/><path d="M350 225 H430"/><path d="M530 225 H610"/></g>
+<g fill="#fff" fill-opacity=".95"><path d="M250 217 l12 8 -12 8z"/><path d="M430 217 l12 8 -12 8z"/><path d="M610 217 l12 8 -12 8z"/></g>
+<g font-family="Arial, sans-serif" font-weight="700" font-size="14" text-anchor="middle">
+<rect x="70" y="175" width="100" height="100" rx="20" fill="#22c55e"/><text x="120" y="230" fill="#fff">Sheets</text>
+<rect x="250" y="175" width="100" height="100" rx="20" fill="#fbbf24"/><text x="300" y="230" fill="#431407">Claude</text>
+<rect x="430" y="175" width="100" height="100" rx="20" fill="#0f172a"/><text x="480" y="223" fill="#fff">Eleven</text><text x="480" y="241" fill="#fff">Labs</text>
+<rect x="610" y="175" width="100" height="100" rx="20" fill="#38bdf8"/><text x="660" y="230" fill="#0c4a6e">Telegram</text>
+</g>
+<rect x="40" y="48" width="250" height="28" rx="14" fill="#000" fill-opacity=".3"/><text x="165" y="67" font-family="monospace" font-size="13" text-anchor="middle" fill="#fecdd3">n8n · zero manual steps</text>
+<g fill="#fff" fill-opacity=".8"><rect x="260" y="340" width="6" height="30" rx="3"/><rect x="274" y="326" width="6" height="44" rx="3"/><rect x="288" y="316" width="6" height="54" rx="3"/><rect x="302" y="332" width="6" height="38" rx="3"/><rect x="316" y="322" width="6" height="48" rx="3"/><rect x="330" y="336" width="6" height="34" rx="3"/></g>
+</svg>

@@ -45,12 +45,12 @@ const personalityTraits = [
 ];
 
 const interests = [
-  "AI & Machine Learning",
-  "Web Development",
-  "Open Source",
-  "Tech Blogging",
+  "Multi-Agent AI Systems",
+  "Mobile Apps",
+  "Developer Tooling",
+  "Automation",
   "Mentoring",
-  "Code Reviews",
+  "Shipping Products",
 ];
 
 export default function AboutPage() {
@@ -187,14 +187,9 @@ export default function AboutPage() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <div className="space-y-3">
+                    <div className="flex flex-wrap gap-2">
                       {skillList.map((skill, index) => (
-                        <SkillBadge
-                          key={skill.name}
-                          name={skill.name}
-                          level={skill.level}
-                          index={index}
-                        />
+                        <SkillBadge key={skill} name={skill} index={index} />
                       ))}
                     </div>
                   </CardContent>

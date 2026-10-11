@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse"><stop stop-color="#1e1b4b"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#a78bfa" stop-opacity=".9"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></radialGradient></defs>
+<rect width="800" height="450" fill="url(#bg)"/>
+<circle cx="400" cy="225" r="150" fill="url(#glow)" fill-opacity=".5"/>
+<g stroke="#c4b5fd" stroke-opacity=".55" stroke-width="2">
+<line x1="400" y1="225" x2="400" y2="70"/><line x1="400" y1="225" x2="535" y2="147"/><line x1="400" y1="225" x2="535" y2="303"/><line x1="400" y1="225" x2="400" y2="380"/><line x1="400" y1="225" x2="265" y2="303"/><line x1="400" y1="225" x2="265" y2="147"/>
+<circle cx="400" cy="225" r="155" stroke-dasharray="4 8"/>
+</g>
+<g font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">
+<circle cx="400" cy="225" r="40" fill="#f472b6"/><text x="400" y="230">DIRECTOR</text>
+<circle cx="400" cy="70" r="30" fill="#6366f1"/><text x="400" y="74" font-size="10">ENGINEER</text>
+<circle cx="535" cy="147" r="30" fill="#22d3ee"/><text x="535" y="151" font-size="10" fill="#0f172a">DESIGNER</text>
+<circle cx="535" cy="303" r="30" fill="#34d399"/><text x="535" y="307" font-size="10" fill="#0f172a">DEV</text>
+<circle cx="400" cy="380" r="30" fill="#fbbf24"/><text x="400" y="384" font-size="10" fill="#0f172a">QA</text>
+<circle cx="265" cy="303" r="30" fill="#fb7185"/><text x="265" y="307" font-size="10">SALES</text>
+</g>
+<g fill="#fff" fill-opacity=".85"><circle cx="150" cy="90" r="3"/><circle cx="660" cy="360" r="3"/><circle cx="700" cy="120" r="2"/><circle cx="110" cy="360" r="2"/></g>
+<rect x="40" y="38" width="190" height="26" rx="13" fill="#000" fill-opacity=".35"/><text x="135" y="56" font-family="monospace" font-size="13" text-anchor="middle" fill="#c4b5fd">brief -&gt; shipped app</text>
+</svg>

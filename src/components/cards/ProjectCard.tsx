@@ -19,6 +19,8 @@ interface ProjectCardProps {
   github?: string;
   demo?: string;
   category: string;
+  featured?: boolean;
+  id?: number;
   index?: number;
 }
 
@@ -52,7 +54,7 @@ export function ProjectCard({
               alt={title}
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-300"
-              unoptimized={image.endsWith('.gif')}
+              unoptimized={image.endsWith(".gif") || image.endsWith(".svg")}
               onError={() => setImageError(true)}
               loading="lazy"
             />
@@ -74,23 +76,18 @@ export function ProjectCard({
           <CardTitle className="line-clamp-1 group-hover:text-primary transition-colors">
             {title}
           </CardTitle>
-          <CardDescription className="line-clamp-2">
+          <CardDescription className="line-clamp-4">
             {description}
           </CardDescription>
         </CardHeader>
 
         <CardContent className="flex-1">
           <div className="flex flex-wrap gap-2">
-            {technologies.slice(0, 4).map((tech, idx) => (
+            {technologies.map((tech, idx) => (
               <Badge key={idx} variant="outline" className="text-xs">
                 {tech}
               </Badge>
             ))}
-            {technologies.length > 4 && (
-              <Badge variant="outline" className="text-xs">
-                +{technologies.length - 4}
-              </Badge>
-            )}
           </div>
         </CardContent>
 

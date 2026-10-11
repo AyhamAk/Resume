@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse"><stop stop-color="#0c1e3d"/><stop offset="1" stop-color="#0e7490"/></linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="#67e8f9" stroke-opacity=".15"/></pattern></defs>
+<rect width="800" height="450" fill="url(#bg)"/><rect width="800" height="450" fill="url(#grid)"/>
+<g stroke="#67e8f9" stroke-width="3" stroke-linejoin="round">
+<rect x="150" y="110" width="300" height="200"/><line x1="150" y1="210" x2="450" y2="210" stroke-opacity=".5" stroke-dasharray="10 6"/>
+<path d="M450 110 L560 60 L560 260 L450 310" stroke="#a5f3fc"/><path d="M150 110 L260 60 L560 60" stroke="#a5f3fc"/>
+<circle cx="300" cy="260" r="34" stroke="#fbbf24"/><path d="M230 160 H370" stroke="#fbbf24"/>
+</g>
+<g stroke="#fbbf24" stroke-width="1.5"><line x1="150" y1="335" x2="450" y2="335"/><line x1="150" y1="328" x2="150" y2="342"/><line x1="450" y1="328" x2="450" y2="342"/><line x1="480" y1="110" x2="480" y2="310"/><line x1="473" y1="110" x2="487" y2="110"/><line x1="473" y1="310" x2="487" y2="310"/></g>
+<g font-family="monospace" font-size="14" fill="#fde68a" text-anchor="middle"><text x="300" y="358">3000</text><text x="500" y="215" transform="rotate(90 500 215)">2000</text></g>
+<rect x="40" y="380" width="400" height="42" rx="10" fill="#000" fill-opacity=".45"/><text x="58" y="406" font-family="monospace" font-size="14" fill="#67e8f9">Command: draw a room with a round table_</text>
+</svg>

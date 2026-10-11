@@ -6,10 +6,10 @@ import { personalInfo, skills, experience, projects } from './data';
  */
 export function buildSystemPrompt(): string {
   // Extract top skills from each category
-  const topFrontendSkills = skills.frontend.slice(0, 4).map(s => s.name).join(', ');
-  const topBackendSkills = skills.backend.slice(0, 4).map(s => s.name).join(', ');
-  const topAISkills = skills['ai & automation'].slice(0, 4).map(s => s.name).join(', ');
-  const topDevOpsSkills = skills['devops & tools'].slice(0, 4).map(s => s.name).join(', ');
+  const topFrontendSkills = skills.frontend.slice(0, 4).join(', ');
+  const topBackendSkills = skills.backend.slice(0, 4).join(', ');
+  const topAISkills = skills['ai & llm'].slice(0, 4).join(', ');
+  const topDevOpsSkills = skills['cloud & infra'].slice(0, 4).join(', ');
 
   // Get recent experience (first entry)
   const recentExp = experience[0];

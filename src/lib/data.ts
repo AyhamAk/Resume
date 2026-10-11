@@ -1,102 +1,88 @@
 export const personalInfo = {
   name: "Ayham Klaani",
-  title: "Full-Stack Developer & AI Engineer",
-  tagline: "I build automation, AI-driven tools, and enterprise-grade systems.",
+  title: "Full-Stack Product Engineer",
+  roles: ["AI Agents", "Mobile", "Enterprise Web"],
+  tagline: "I ship multi-agent AI systems, enterprise platforms, and mobile apps people actually use.",
   email: "aklaani508@gmail.com",
-  phone: "0504315245",
+  phone: "+972-50-431-5245",
   location: "Israel, Golan Heights",
+  website: "https://www.ayham.work",
   github: "https://github.com/AyhamAk",
   linkedin: "https://www.linkedin.com/in/ayham-klaani-31b81b157/",
-  bio: `Full-Stack Developer and AI Engineer with 3+ years building enterprise-grade Angular & Java applications at BMC Software. Strong focus on automation, AI-driven tooling, and scalable product development. I build systems that reduce manual work, improve performance, and ship real customer value. Experienced across frontend, backend, CI/CD, and AI automation (MCP, RAG, multi-agent systems).`,
-  languages: ["Arabic (Native)", "English (Advanced)", "Hebrew (Advanced)"],
+  bio: `Full-stack product engineer with 4+ years at BMC Software — shipping production multi-agent AI systems for enterprise customers, supporting clients directly and delivering patches to production, and independently publishing trilingual mobile apps with real users on iOS and Android. I own features from user problem to measured outcome: scoping, building across Angular / Java / Node / mobile, and iterating on feedback.`,
+  languages: ["Arabic (Native)", "English (Fluent)", "Hebrew (Fluent)"],
 };
 
-export const skills = {
-  frontend: [
-    { name: "Angular", level: 95 },
-    { name: "TypeScript", level: 92 },
-    { name: "HTML5/CSS3", level: 90 },
-    { name: "React.js", level: 85 },
-    { name: "Next.js", level: 82 },
-    { name: "UI/UX Design", level: 80 },
+export const stats = [
+  { value: "4+", label: "Years at BMC Software" },
+  { value: "5h → 1h", label: "Test authoring time" },
+  { value: "30+", label: "Families on my mobile app" },
+  { value: "2", label: "App stores, solo-shipped" },
+];
+
+export const skills: Record<string, string[]> = {
+  "ai & llm": [
+    "Multi-Agent Orchestration",
+    "RAG",
+    "MCP",
+    "Google ADK",
+    "LangGraph",
+    "Claude & Gemini APIs",
+    "AWS Bedrock",
+    "Prompt Engineering",
+    "Claude Code",
   ],
-  backend: [
-    { name: "Java", level: 92 },
-    { name: "REST APIs", level: 95 },
-    { name: "Spring Boot", level: 88 },
-    { name: "Node.js", level: 85 },
-    { name: "NoSQL", level: 80 },
-    { name: "MongoDB", level: 78 },
-  ],
-  "ai & automation": [
-    { name: "AI Agents", level: 90 },
-    { name: "MCP Servers", level: 88 },
-    { name: "RAG Systems", level: 85 },
-    { name: "Multi-Agent Systems", level: 87 },
-    { name: "Playwright", level: 90 },
-    { name: "Robot Framework", level: 85 },
-  ],
-  testing: [
-    { name: "Test Automation", level: 92 },
-    { name: "Playwright", level: 90 },
-    { name: "Robot Framework", level: 88 },
-    { name: "Jasmine", level: 82 },
-    { name: "Unit Testing", level: 85 },
-  ],
-  "devops & tools": [
-    { name: "Git", level: 95 },
-    { name: "Jenkins", level: 88 },
-    { name: "CI/CD Pipelines", level: 90 },
-    { name: "Kibana", level: 85 },
-    { name: "Docker", level: 78 },
-    { name: "Jira", level: 85 },
-  ],
-  other: [
-    { name: "Team Collaboration", level: 95 },
-    { name: "Adaptability", level: 92 },
-    { name: "Continuous Learning", level: 95 },
-    { name: "Problem Solving", level: 90 },
-    { name: "Python", level: 80 },
-    { name: "OpenCV", level: 75 },
-  ],
+  languages: ["TypeScript", "JavaScript", "Java", "Python"],
+  frontend: ["Angular", "React / Next.js", "HTML/CSS"],
+  backend: ["Java REST APIs", "Spring Boot", "Node.js"],
+  mobile: ["React Native / Expo", "App Store & Google Play", "OTA updates"],
+  "cloud & infra": ["Supabase", "Cloudflare R2", "Railway", "Jenkins", "CI/CD", "Kibana", "Git"],
+  testing: ["Playwright", "Robot Framework"],
 };
 
 export const experience = [
   {
     id: 1,
-    title: "Product Developer",
+    title: "Software Engineer",
     company: "BMC Software",
     location: "Israel",
     period: "September 2023 – Present",
     type: "Full-time",
     description: [
-      "Designed, built, and optimized full-stack web applications using Angular, Java (REST APIs), and modern development tools to meet enterprise-level performance standards",
-      "Delivered scalable features for both On-Prem and SaaS environments, adapting architectures for different customer deployment models",
-      "Designed and maintained RESTful Java APIs, improving system reliability and ensuring seamless integration across modules",
-      "Increased automated test coverage using the Robot Framework, reducing manual QA efforts and catching defects earlier in the release cycle",
-      "Led technical Webex sessions with customers, reproducing problems, analyzing logs, and delivering actionable solutions",
-      "Participated in major code refactoring initiatives, improving architecture consistency, readability, and long-term maintainability",
-      "Explored and integrated Model Context Protocol (MCP) servers into development workflows to enable AI-driven automation and tooling",
-      "Collaborated on building Retrieval-Augmented Generation (RAG) knowledge bases to improve AI agents' understanding of code and enhance response accuracy",
+      "Architected and shipped a production multi-agent AI system (Google ADK + Claude on AWS Bedrock) — orchestrator plus 4 specialized sub-agents — giving Control-M enterprise users a natural-language interface to create and update workflow jobs",
+      "Built an AI test-generation pipeline (RAG over 600+ existing Playwright builders) that cut integration-test authoring time from ~5 hours to ~1 hour per test",
+      "Built RAG knowledge bases enabling AI agents to navigate and reason over large enterprise codebases; integrated MCP servers into local dev workflows and demoed AI-driven developer tooling to the broader team",
+      "Owned core Forecast domain features end-to-end — Angular frontend and Java REST backend — across both On-Prem and SaaS deployments, serving enterprise clients",
+      "Led technical support sessions directly with enterprise customers: reproduced production issues, shipped targeted patches, and delivered resolutions — turning customer-reported bugs into shipped fixes with minimal back-and-forth",
+      "Designed CI/CD pipelines and a Kibana monitoring dashboard that cut failed-build detection from hours to minutes; drove Angular upgrades across 3 major versions",
+      "Expanded automated test coverage with Robot Framework; mentored student developers on the team as tech lead on AI-powered features",
     ],
-    technologies: ["Angular", "TypeScript", "Java", "REST APIs", "Robot Framework", "MCP", "RAG", "CI/CD", "Kibana", "Jenkins"],
+    technologies: [
+      "Google ADK",
+      "Claude",
+      "AWS Bedrock",
+      "RAG",
+      "MCP",
+      "Angular",
+      "Java",
+      "Playwright",
+      "Robot Framework",
+      "Jenkins",
+      "Kibana",
+    ],
   },
   {
     id: 2,
-    title: "Product Developer Intern (Student)",
+    title: "Product Developer Intern",
     company: "BMC Software",
     location: "Israel",
     period: "May 2022 – September 2023",
     type: "Internship",
     description: [
-      "Contributed to full-stack web development projects, collaborating with senior developers to deliver new product features on time and at production quality",
-      "Used Git, automation tools, and debugging frameworks to enhance code quality and streamline team workflows",
-      "Refactored and upgraded Angular applications across major versions, improving maintainability and performance while aligning with updated framework standards",
-      "Fixed high-priority frontend and backend defects in TypeScript and Java, improving overall product stability and responsiveness",
-      "Gained a strong understanding of product delivery cycles, helping bridge the gap between technical execution and business objectives",
-      "Designed and managed CI/CD pipelines that built and tested complete applications end-to-end, gaining hands-on experience with automated build, test, and deployment workflows",
+      "Shipped full-stack features to production quality alongside senior developers; built Git automation tooling and debugging scripts that streamlined team workflows",
+      "Promoted to full-time Software Engineer after one year based on output and ownership",
     ],
-    technologies: ["Angular", "TypeScript", "Java", "Git", "CI/CD", "Debugging", "Automation"],
+    technologies: ["Angular", "TypeScript", "Java", "Git", "CI/CD", "Automation"],
   },
   {
     id: 3,
@@ -115,25 +101,150 @@ export const experience = [
   },
 ];
 
-export const projects = [
+export interface Project {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  features: string[];
+  category: string;
+  featured?: boolean;
+  github?: string;
+  demo?: string;
+}
+
+/**
+ * Flagship shipped product — rendered in its own showcase section.
+ * Store links are intentionally unset until the public URLs are provided.
+ */
+export const shippedApp = {
+  name: "Steps Academy",
+  subtitle: "Trilingual Montessori Parent & Staff App",
+  role: "Solo Developer",
+  year: "2026",
+  platforms: ["iOS", "Android"],
+  languages: ["العربية", "עברית", "English"],
+  summary:
+    "Sole developer: scoped, designed, built and published a trilingual (Arabic / Hebrew / English, full RTL) parent app — 30+ families onboarded across iOS and Android within weeks of launch.",
+  highlights: [
+    "Child-specific photo gallery, private to each family via invite-code onboarding",
+    "Daily nursery schedule, after-school course sign-ups with evening reminders",
+    "Parenting tip videos and push-notification announcements",
+    "Web admin panel for rosters, child-tagged album uploads, weekly schedule templates, course management and per-user engagement analytics",
+    "OTA updates to skip store review cycles; infrastructure cost ~$0/month",
+  ],
+  stack: [
+    "React Native / Expo",
+    "Railway",
+    "Supabase",
+    "Cloudflare R2",
+    "JWT + RBAC",
+    "Push Notifications",
+  ],
+  appStoreUrl: undefined as string | undefined,
+  playStoreUrl: undefined as string | undefined,
+};
+
+export const projects: Project[] = [
   {
     id: 1,
+    title: "Steps Academy",
+    description:
+      "Trilingual (Arabic / Hebrew / English, full RTL) Montessori parent & staff app, published solo on the App Store and Google Play. 30+ families onboarded within weeks, backed by a custom Railway + Supabase + R2 backend and web admin panel.",
+    image: "/projects/steps-academy.svg",
+    technologies: ["React Native", "Expo", "Supabase", "Railway", "Cloudflare R2"],
+    features: [
+      "Invite-code onboarding with JWT auth and role-based access",
+      "Private per-child photo galleries",
+      "Push notifications and OTA updates",
+      "Web admin panel with engagement analytics",
+    ],
+    category: "Mobile",
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "War Room — Multi-Agent Orchestration",
+    description:
+      "Six specialized LLM agents (Director, Engineer, Designer, Developer, QA, Sales) autonomously plan, build and ship working web apps from a one-line brief, with a self-correcting loop and real-time SSE streaming.",
+    image: "/projects/war-room.svg",
+    technologies: ["Node.js", "LangGraph", "Claude", "Gemini", "Playwright"],
+    features: [
+      "6 agents with scoped tools and defined handoff protocol",
+      "Self-correcting agent loop",
+      "Real-time streaming via SSE",
+      "From one-line brief to shipped app",
+    ],
+    category: "AI & Automation",
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "Shakkil — AI-Driven CAD Drafting",
+    description:
+      "Local web app where you describe what you want to draft and AI agents generate and execute the CAD commands through AutoCAD and Blender MCP integrations.",
+    image: "/projects/shakkil.svg",
+    technologies: ["TypeScript", "AutoCAD 2027", "Blender MCP", "MCP"],
+    features: [
+      "Natural-language drafting",
+      "AutoCAD and Blender MCP integrations",
+      "Agents execute CAD commands directly",
+      "Runs locally",
+    ],
+    category: "AI & Automation",
+    featured: true,
+  },
+  {
+    id: 4,
+    title: "AI Content Automation Pipeline",
+    description:
+      "End-to-end pipeline: Google Sheets → Claude (script generation) → ElevenLabs (voiceover) → Telegram (delivery) — fully automated video content production with zero manual steps per episode.",
+    image: "/projects/content-pipeline.svg",
+    technologies: ["n8n", "Docker", "ElevenLabs", "Claude API"],
+    features: [
+      "Sheet-driven episode queue",
+      "Claude script generation",
+      "ElevenLabs voiceover",
+      "Telegram delivery, zero manual steps",
+    ],
+    category: "AI & Automation",
+  },
+  {
+    id: 5,
     title: "AI-Powered Test Generator",
-    description: "Built a multi-agent system that automatically generates Playwright test specs, increasing coverage and cutting manual scripting time. Uses AI to understand application behavior and create comprehensive test cases.",
+    description:
+      "Built a multi-agent pipeline (RAG over 600+ existing Playwright builders) that automatically generates Playwright test specs — cutting integration-test authoring from ~5 hours to ~1 hour per test.",
     image: "/projects/test-generator.gif",
-    technologies: ["TypeScript", "Playwright", "Multi-Agent Systems", "AI", "Node.js"],
+    technologies: ["TypeScript", "Playwright", "RAG", "Multi-Agent Systems", "Node.js"],
     features: [
       "Multi-agent system architecture",
       "Automatic test spec generation",
-      "Intelligent selector optimization",
+      "RAG over 600+ Playwright builders",
       "Integration with CI/CD pipelines",
     ],
     category: "AI & Automation",
   },
   {
-    id: 2,
+    id: 6,
+    title: "Control-M Job Assistant",
+    description:
+      "Production multi-agent AI system (Google ADK + Claude on AWS Bedrock) — an orchestrator plus 4 specialized sub-agents — giving Control-M enterprise users a natural-language interface to create and update workflow jobs.",
+    image: "/projects/control-m-agents.svg",
+    technologies: ["Google ADK", "Claude", "AWS Bedrock", "Multi-Agent Systems"],
+    features: [
+      "Orchestrator + 4 specialized sub-agents",
+      "Natural-language job creation and updates",
+      "Production enterprise deployment",
+      "Built at BMC Software",
+    ],
+    category: "Enterprise Software",
+  },
+  {
+    id: 7,
     title: "Forecast Domain Development",
-    description: "Designed and implemented core forecasting features used by enterprise clients at BMC Software, handling both frontend (Angular) and backend (Java REST) logic. Improved prediction accuracy and system reliability.",
+    description:
+      "Owned core forecasting features used by enterprise clients at BMC Software end-to-end — Angular frontend and Java REST backend — across both On-Prem and SaaS deployments.",
     image: "/projects/forecast.gif",
     technologies: ["Angular", "TypeScript", "Java", "REST APIs", "Enterprise Architecture"],
     features: [
@@ -145,9 +256,10 @@ export const projects = [
     category: "Enterprise Software",
   },
   {
-    id: 3,
+    id: 8,
     title: "CI/CD Monitoring Dashboard",
-    description: "Developed a Kibana-based dashboard to monitor Jenkins pipelines, improving visibility into deployment performance. Provides real-time insights into build status, test results, and deployment metrics.",
+    description:
+      "Kibana-based dashboard monitoring Jenkins pipelines that cut failed-build detection from hours to minutes, with real-time insight into build status, test results, and deployment metrics.",
     image: "/projects/cicd-dashboard.gif",
     technologies: ["Kibana", "Jenkins", "Elasticsearch", "CI/CD", "Monitoring"],
     features: [
@@ -159,9 +271,10 @@ export const projects = [
     category: "DevOps & Infrastructure",
   },
   {
-    id: 4,
+    id: 9,
     title: "Student Housing Platform",
-    description: "Built a full-stack student housing web platform with authentication and search features. Academic project using Angular, NoSQL, and Node.js with comprehensive CRUD operations and user management.",
+    description:
+      "Full-stack student housing web platform with authentication and search features. Academic project using Angular, NoSQL, and Node.js with comprehensive CRUD operations and user management.",
     image: "/projects/housing.gif",
     technologies: ["Angular", "Node.js", "NoSQL", "MongoDB", "Express"],
     features: [
@@ -179,16 +292,14 @@ export const education = [
     degree: "B.Sc. in Computer Science",
     institution: "Tel-Hai College",
     location: "Israel",
-    period: "October 2019 – August 2023",
+    period: "2019 – 2023",
     specialization: "Software Development",
     achievements: [
-      "Completed comprehensive software development program",
-      "Led multiple successful team projects",
-      "Developed full-stack applications and computer vision systems",
+      "Software Development track",
+      "Full-stack student housing platform (Angular / Node.js)",
+      "Real-time people-detection system (Python, OpenCV)",
     ],
   },
 ];
 
-export const certifications = [
-  // Add any certifications here when available
-];
+export const certifications: { name: string; issuer: string; date: string }[] = [];

@@ -87,6 +87,9 @@ export default function ExperiencePage() {
                         <p className="text-sm text-muted-foreground mt-1">
                           {edu.period} • {edu.location}
                         </p>
+                        <div className="mt-2">
+                          <Badge variant="secondary">{edu.specialization}</Badge>
+                        </div>
                       </div>
                     </div>
                   </CardHeader>
